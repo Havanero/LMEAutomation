@@ -11,8 +11,7 @@ namespace LMEAutomation.TestCases
     {
 
         public string LinkName { get; set; }
-
-
+        public string LinkUrl { get; set; }
 
     }
     
