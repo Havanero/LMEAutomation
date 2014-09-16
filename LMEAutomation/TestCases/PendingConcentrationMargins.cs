@@ -10,8 +10,8 @@ namespace LMEAutomation.TestCases
 {
     class PendingConcentrationMargins:RowFixture
     {
-              
-        private readonly List<PendingConcentrationMarginsRow> _rowDetails = new List<PendingConcentrationMarginsRow>();
+
+        private List<PendingConcentrationMarginsRow> _rowDetails;
 
         public override Type GetTargetClass()
         {
@@ -21,6 +21,8 @@ namespace LMEAutomation.TestCases
 
         public override object[] Query()
         {
+
+            _rowDetails = new List<PendingConcentrationMarginsRow>();
 
             HKEx.Clear.CDWGUI.Param.ApprovalsTableAdapters.GetPendingConcentrationMarginsTableAdapter approvalTable = new HKEx.Clear.CDWGUI.Param.ApprovalsTableAdapters.GetPendingConcentrationMarginsTableAdapter();
             var approvals = approvalTable.GetData();

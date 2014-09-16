@@ -32,6 +32,8 @@ namespace LMEAutomation.TestCases
              HKEx.Clear.CDWGUI.Param.ConcentrationMarginView _concetrationMargerns = new ConcentrationMarginView();
             _concetrationMargerns.LoadData();
             
+
+            
             var _concentrationData = _concetrationMargerns.ConcentrationMarginsDT;
 
             
